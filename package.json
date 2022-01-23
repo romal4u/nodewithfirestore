@@ -1,0 +1,36 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only firestore",
+    "deploy": "firebase deploy --only firestore",
+    "test": "mocha --timeout 10000 test/**/*.js",
+    "test-link": "mocha --timeout 10000 test/third_party_apis/fetch_data.js",
+    "test-user": "mocha --timeout 10000 test/user/*.js",
+    "start": "nodemon"
+  },
+  "author": "Romal Patel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chai-as-promised": "^7.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.16.0",
+    "firebase-tools": "^10.1.2",
+    "helmet": "^5.0.1"
+  },
+  "devDependencies": {
+    "@firebase/testing": "^0.20.11",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "google-gax": "^2.29.4",
+    "mocha": "^9.1.4",
+    "nodemon": "^2.0.15"
+  }
+}
