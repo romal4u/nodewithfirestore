@@ -16,7 +16,7 @@ Clone the code from the below repository and follow the steps to run.
 
 * Clone this repository:
 ```
-    $ git clone https://github.com/AuthorizeNet/sample-code-node.git
+    $ git clone https://github.com/romal4u/nodewithfirestore.git
 ```
 * Start firebase emulator use below command:
 
